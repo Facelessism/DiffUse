@@ -1,0 +1,31 @@
+{
+  "name": "diff-use",
+  "version": "1.0.0",
+  "description": "DiffUse turns a Git diff into a structural change map for JavaScript and TypeScript repositories.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "diff-use": "dist/bin.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": ["git", "diff", "typescript", "static-analysis", "code-review"],
+  "dependencies": {
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "vitest": "^3.2.0"
+  }
+}
